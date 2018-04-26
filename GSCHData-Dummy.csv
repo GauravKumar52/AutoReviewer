@@ -1,0 +1,21 @@
+DESCRIPTION,Comment,Defect Type
+ABCD,One or more environment dependency not resolved,Casual Defect
+ABCF,Data used is incorrectly setup,Casual Defect
+ABCE,Application GUI property changed,Casual Defect
+ABCGF,Application server or database  laetncy,Casual Defect
+ABF,A valid application defect,Actual Defect
+ABCD,environment dependency not resolved,Casual Defect
+ABCF,Test Data incorrect,Casual Defect
+ABCE,GUI property changed,Casual Defect
+ABCGF,database  laetncy,Casual Defect
+ABF,A valid application defect,Actual Defect
+ABCD,environment is down,Casual Defect
+ABCF,Data incorrect,Casual Defect
+ABCE,Application GUI property changed,Casual Defect
+ABCGF,Application server  laetncy,Casual Defect
+ABF,A valid application defect,Actual Defect
+ABCD,environment  not resolved,Casual Defect
+ABCF,Data used is correctly setup,Casual Defect
+ABCE,GUI property changed,Casual Defect
+ABCGF,Application server or database  laetncy,Casual Defect
+ABF,A valid application defect,Actual Defect
