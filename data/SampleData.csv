@@ -1,0 +1,14 @@
+Mini-App,Script ID,Failure,Reason
+CustPref,115800,Confirm Not Found!,Need Manual Analysis
+CustPref,115802,Verifying Message on screen,Data Issue
+CustPref,115804,Go paperless for all accounts Not Found!,Data Issue
+CustPref,115800,Expected message is : “Large Print” but it’s not present on screen,Data Issue
+CustPref,115800,View statements Not Found!,Environment Issue
+Security Vulnerability,115800,"Page is not loading, exceed time limits",Environment Issue
+Security Vulnerability,115800,Verifying Message on screen,Environment Issue
+Pay,115800,CcountNotFoundException: 20-16-40 90558958,Data Issue
+Pay,115800,Verifying Message on screen,Environment Issue
+Pay,115800,"no such element: Unable to locate element: {“method”:”xpath”, “selecter”:”//*[@id=’’]}",Environment Issue
+Pay,115800,AccountNotFoundException: 20-15-90 56048100,Data Issue
+Pay,115800,32030 – You cannot make a bulk payment to less than 5 payees. Please add further amounts or make single payments rather than a bulk payment.,Data Issue
+Pay,115800,1270 – You haven’t made any changes  - please try again if you’d like to amend the payment.,Need Manual Analysis

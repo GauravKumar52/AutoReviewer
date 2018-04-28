@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.naive_bayes import MultinomialNB
 
-file_path = "/media/manish/Data1/personal/project/gaurav-project/data/GSCHData-Dummy.csv"
+file_path = "data/GSCHData-Dummy.csv"
 
 data = pd.read_csv(file_path)
 language = "english"
@@ -33,14 +33,19 @@ data["cleaned_tokens"] = data["cleaned_tokens"].apply(
     lambda token_list: util_obj.do_stemming(words=token_list))
 
 data["filtered_comment"] = data["cleaned_tokens"].apply(lambda tokens: " ".join(tokens))
-# print(data)
+print(data)
 
 # Feature Engineering
 X_train_counts = count_vect.fit_transform(data["filtered_comment"])
 X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
 
+# print(X_train_tfidf[0:1, :])
+# print(type(X_train_tfidf))
+# print(X_train_tfidf.shape)
 # Steps line no 20 - 40 should also be done for test data.
 
+temp = pd.DataFrame(X_train_tfidf.toarray())
+# print(temp)
 # Modelling
 
 # Model will be trained only on Train Data
@@ -50,6 +55,7 @@ clf = MultinomialNB().fit(X_train_tfidf, data["Defect Type"])
 predicted = clf.predict(X_train_tfidf) # Modify X_train_tfidf with your test data frame after applying step of line 20-40.
 accuracy = np.mean(predicted == data["Defect Type"])
 print("Accuracy :", accuracy)
+
 
 
 
