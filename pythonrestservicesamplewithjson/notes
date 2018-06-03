@@ -1,0 +1,9 @@
+1) Install flask and gunicorn package using following command
+    pip install flask==1.0.2
+    pip install gunicorn==19.8.1
+2) Start REST service
+    Go to your project directory and run the following command
+    gunicorn -b 0.0.0.0:9000 application:app
+2) Curl command to test
+    Go to your project directory and run the following command
+    curl -X POST -H "Content-Type: application/json" -d '@input.json' http://localhost:9000/show
